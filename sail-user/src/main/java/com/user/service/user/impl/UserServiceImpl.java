@@ -1,11 +1,11 @@
-package com.user.service.impl;
+package com.user.service.user.impl;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
-import com.user.dao.UserDao;
+import com.user.dao.user.UserDao;
 import com.user.entity.User;
-import com.user.service.UserService;
+import com.user.service.user.UserService;
 
 /**
  * 用户服务实现

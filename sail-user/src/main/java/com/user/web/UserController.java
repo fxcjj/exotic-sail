@@ -11,7 +11,7 @@ import org.springframework.web.bind.annotation.ResponseBody;
 
 import com.user.common.AbstractBaseController;
 import com.user.entity.User;
-import com.user.service.UserService;
+import com.user.service.user.UserService;
 
 /**
  * 用户
@@ -25,15 +25,15 @@ public class UserController extends AbstractBaseController {
 	@Autowired
 	private UserService userService;
 
-	@Autowired
-	private DemoService demoService;
+	/*@Autowired
+	private DemoService demoService;*/
 
-	@RequestMapping(value = "/rpc")
+	/*@RequestMapping(value = "/rpc")
 	@ResponseBody
-	public Object test(HttpServletRequest req) /*throws BusinessException*/ {
+	public Object test(HttpServletRequest req) throws BusinessException {
 		String str = demoService.sayHello("john");
 		return str;
-	}
+	}*/
 
 	@RequestMapping(value = "/queryById")
 	@ResponseBody
